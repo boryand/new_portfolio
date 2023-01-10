@@ -1,0 +1,91 @@
+.aboutme_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $medium;
+}
+
+.me {
+  margin-left: 10px;
+  height: 500px;
+  box-shadow: 4px 4px 16px 3px #000000;
+}
+
+.just_me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  margin-top: 50px;
+}
+
+.description1 {
+  margin-top: 5%;
+  font-size: 1.5rem;
+  width: 600px;
+  font-family: "Barlow";
+  line-height: 30px;
+}
+
+.just_me2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 8%;
+  margin-bottom: 70px;
+}
+
+.justme2_sub1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+}
+
+.justme2_sub2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10%;
+}
+
+.what_i_use,
+.certificates {
+  font-family: "Barlow";
+  color: $brown;
+  font-size: 3rem;
+  margin-bottom: 5%;
+}
+
+.item1,
+.item2 {
+  font-family: "Barlow";
+  margin-top: 25px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+.my_diploma {
+  height: 650px;
+}
+
+.hello {
+  font-size: 3rem;
+font-family: "Barlow";
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: "Sacramento", cursive;
+  text-align: center;
+ 
+}
+
+.mess_link {
+  text-decoration: none;
+  font-family: "Playfair Display";
+  color: hotpink;
+  cursor: pointer;
+}

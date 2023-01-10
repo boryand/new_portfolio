@@ -1,0 +1,80 @@
+.contacts_container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: $medium;
+  height: 650px;
+}
+
+.question {
+  font-size: 1.2rem;
+  width: 500px;
+  color: $accent;
+  font-family: "Playfair Display", serif;
+}
+
+.sub_contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: auto;
+  width: 400px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  font-size: 16px;
+
+  margin-right: 20%;
+  margin-top: 5%;
+}
+
+input {
+  width: 450px;
+  height: 35px;
+  padding: 7px;
+  font-family: "Indie Flower", cursive;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-bottom: 5%;
+}
+
+input[type="submit"] {
+  margin-top: 2rem;
+  cursor: pointer;
+  background-color: black;
+  border: none;
+  width: 150px;
+  font-size: 1rem;
+  color: $medium;
+}
+input[type="submit"]:hover {
+  color: #f4ceeb;
+}
+
+label {
+  font-size: 1rem;
+  font-family: "Barlow", sans-serif;
+
+  font-weight: bold;
+
+  margin-bottom: 5%;
+}
+
+textarea {
+  width: 450px;
+  height: 200px;
+
+  font-family: "Indie Flower", cursive;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+.img1 {
+  height: 500px;
+}
