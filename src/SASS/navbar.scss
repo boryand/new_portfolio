@@ -22,3 +22,25 @@
   font-size: 1.5rem;
   margin-right: 20px;
 }
+
+@media only screen and (max-width: 450px) {
+ .nav {
+  justify-content: center;
+  align-items: center;
+  }
+
+ .link1,
+ .link2 {
+  font-size: 15px;
+  margin-right: 10px;
+}
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
+  .link1,
+  .link2 {
+   font-size: 15px;
+   margin-right: 20px;
+ }
+ }
+
