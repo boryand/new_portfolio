@@ -1,0 +1,11 @@
+.contacts_container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sub_contacts1 {
+  height: 400px;
+  width: 400px;
+  margin-top: 10%;
+}

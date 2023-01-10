@@ -1,14 +1,46 @@
-.container {
-}
-
-.sub1 {
-  background-color: $light;
-  height: 400px;
+.landing_container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  background-color: $medium;
 }
 
-.sub2 {
-  text-align: center;
+.cont1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  height: 500px;
+
+  .lets_build {
+    margin-top: 5%;
+
+    font-family: "Teko", sans-serif;
+    align-self: center;
+    font-size: 10rem;
+
+    background-image: linear-gradient(
+      -225deg,
+      #cad2c5 16%,
+      #84a98c 32%,
+      #52796f 48%,
+      #354f52 64%,
+      #2f3e46 70%,
+      #cad2c5 90%,
+      #84a98c 100%
+    );
+
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.my_description {
+  align-self: center;
+  font-family: "Teko", sans-serif;
+  font-size: 2rem;
+  margin-top: 3%;
+
+  color: #2f3e46;
 }

@@ -1,15 +1,38 @@
+import Typical from "react-typical";
+
+
+
+
+
+
 const Landing = () => {
+
+
   return (
-    <div className="container">
-      <div className="sub1">
-        <div className="sub2">
-          <h1 className="hi">Hello,</h1>
-          <h3 className="my_name"> my name is </h3>
-          <h1 className="name"> Boryana Dimitrova</h1>
-          <h3 className="web_dev"> a Web Developer </h3>
-          <h3> creating unique digital experiences</h3>
-        </div>
+    <div className="landing_container">
+      <div className="cont1">
+        <h1 className="lets_build"> Hi , I am Bobby !</h1>
+        <p className="my_description">
+          {" "}
+          I am a{" "}
+          <Typical
+            loop={Infinity}
+            wrapper="b"
+            steps={[
+              " frontend developer 💻",
+              2000,
+              "backend learner 🤔",
+              2000,
+              "mom 👶",
+              2000,
+              "minimalist 🌿🤍",
+              2000,
+            ]}
+          />
+        </p>
       </div>
+      <div className="cont2">dddd</div>
+
     </div>
   );
 };
