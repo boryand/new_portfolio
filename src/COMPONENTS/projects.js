@@ -10,7 +10,7 @@ const Projects = () => {
 
   return (
     <div className="projects_container">
-      <div className="number2">
+     
         <div className="box1">
         <a href={url1} target="_blank">
           <img className="img" src={logo} />
@@ -53,7 +53,7 @@ const Projects = () => {
           <p className="tech">Javascript</p>
           <p className="tech1">React</p>
         </div>
-      </div>
+ 
       
     </div>
   );

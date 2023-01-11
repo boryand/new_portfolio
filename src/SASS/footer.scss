@@ -1,7 +1,7 @@
 .footer_container {
   background-color: $medium;
   height: 120px;
-  border-top: 4mm ridge #D7E9B9;
+  border-top: 4mm ridge #d7e9b9;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -22,12 +22,10 @@
 .linked {
   height: 30px;
   margin-right: 10px;
-
 }
 
-
 .mail_to_me :hover,
-.linked :hover{
+.linked :hover {
   box-shadow: 1px 20px red;
 }
 
