@@ -7,8 +7,8 @@
 .box2,
 .box3 {
   width: 400px;
-  height: 250px;
-background-color: $medium;
+  height: max-content;
+
   margin-top: 5%;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -22,6 +22,9 @@ background-color: $medium;
   justify-content: center;
   .description {
     margin-top: 10px;
+    font-family: "Barlow";
+    font-size: 1.2rem;
+    width: 300px;
   }
 
   .technologies {
@@ -30,9 +33,10 @@ background-color: $medium;
 }
 
 .img {
-  height: 400px;
-  width: 400px;
-  margin-top: 40px;
+  height: 300px;
+  width: 300px;
+  margin-top: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .number1 {
@@ -48,15 +52,23 @@ background-color: $medium;
 }
 
 .name {
-  font-family: "Playfair Display", serif;
+  font-family: "Mukta";
   font-size: 2rem;
-  color: $brown;
-
-
+  color: #d7e9b9;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 .technologies {
-
-
-  font-family: "Playfair Display", serif;
+  font-family: "Mukta";
   font-size: 1.3rem;
+}
+
+.tech {
+  font-family: "Barlow";
+  font-size: 1.2rem;
+}
+.tech1 {
+  font-family: "Barlow";
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }

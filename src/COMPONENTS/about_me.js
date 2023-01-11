@@ -12,7 +12,7 @@ const AboutMe = () => {
       
             <span className="hello">
               {" "}
-              Hello , stranger ! 👋 <br />{" "}
+              Hello , stranger !  <br />{" "}
             </span>
     
           My name is Boryana and I am a frontend developer, passionate about
@@ -29,22 +29,11 @@ const AboutMe = () => {
       </div>
 
       <div className="just_me2">
-        <div className="justme2_sub1">
-          <h1 className="what_i_use">Technologies </h1>
-          <p className="item1">HTML5</p>
-          <p className="item2">CSS3</p>
-          <p className="item1">SASS</p>
-          <p className="item2">Javascript</p>
-          <p className="item1">React</p>
-          <p className="item2">Node.js</p>
-          <p className="item1">MongoDB</p>
-          <p className="item2">SQL</p>
-          <p className="item1">Git/Github</p>
-        </div>
+       
 
-        <div className="justme2_sub2">
+        
           <img className="my_diploma" src={certificate}></img>
-        </div>
+      
       </div>
     </div>
   );

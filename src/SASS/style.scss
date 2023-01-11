@@ -3,15 +3,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Vinyl&family=Sacramento&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Vinyl&family=Sacramento&family=Teko:wght@500&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap");
 @import "variables.scss";
+@import "mixins.scss";
 @import "navbar.scss";
 @import "landing.scss";
 @import "projects.scss";
 @import "contacts.scss";
 @import "aboutme.scss";
 @import "footer.scss";
-
 * {
   box-sizing: border-box;
   margin: 0;
