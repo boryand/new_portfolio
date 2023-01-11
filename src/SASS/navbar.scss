@@ -1,3 +1,14 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  background-color: $medium;
+
+
+   .mine_logo {
+    height:130px;
+    margin-left: 50px;  }
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -5,8 +16,9 @@
   background-color: $medium;
 
   height: 80px;
- 
 }
+
+
 
 .nav_item {
   list-style-type: none;
@@ -19,28 +31,48 @@
   background-color: transparent;
   color: #3c2a21;
   font-family: "Poppins", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-right: 20px;
 }
 
+
+
+//MEDIA QUERIES
+
 @media only screen and (max-width: 450px) {
- .nav {
-  justify-content: center;
-  align-items: center;
+  .nav {
+    justify-content: center;
+    align-items: center;
   }
 
- .link1,
- .link2 {
-  font-size: 15px;
-  margin-right: 10px;
-}
-}
-
-@media only screen and (min-width: 767px) and (max-width: 1023px) {
   .link1,
   .link2 {
-   font-size: 15px;
-   margin-right: 20px;
- }
- }
+    font-size: 15px;
+    margin-right: 10px;
+  }
+  .mine_logo {
+    display: none;
+  }
+}
 
+@media only screen and (min-width: 451px) and (max-width: 767px) {
+  .nav {
+    justify-content: center;
+  }
+  .link1,
+  .link2 {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1025px) {
+  .link1,
+  .link2 {
+    font-size: 15px;
+    margin-right: 20px;
+  }
+
+  .sub_contacts {
+    margin-left: 50px;
+  }
+}

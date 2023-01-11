@@ -1,0 +1,183 @@
+//NAVBAR MIXINS START
+
+@mixin res1 {
+  @include res();
+  .img1 {
+    width: auto;
+  }
+  input,
+  textarea {
+    width: 420px;
+  }
+}
+
+@mixin res2 {
+  .img1 {
+    width: 350px;
+    height: 340px;
+  }
+  .sub_contacts {
+    margin: 0;
+  }
+  form {
+    margin: 0;
+  }
+
+  input,
+  textarea {
+    width: 400px;
+  }
+}
+
+//NAVBAR MIXINS END
+
+//ABOUT ME PAGE
+@mixin aboutme_res {
+  .just_me {
+    flex-direction: column;
+    width: 320px;
+
+    .me {
+      width: 300px;
+      margin: 0;
+      height: auto;
+    }
+
+    .description1 {
+      width: 320px;
+      margin-top: 50px;
+      width: 250px;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+  }
+
+  .just_me2 {
+    flex-direction: column-reverse;
+
+    .my_diploma {
+      width: 300px;
+      height: auto;
+    }
+  }
+}
+
+@mixin aboutme_res2 {
+  @include aboutme_res();
+  .just_me {
+    width: 400px;
+    .description1 {
+      width: 380px;
+    }
+  }
+
+  .just_me2 {
+    .my_diploma {
+      width: 400px;
+      height: auto;
+    }
+  }
+}
+
+@mixin aboutme_res3 {
+  @include aboutme_res2();
+  .just_me {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 580px;
+
+    .me {
+      width: 280px;
+      margin-right: 10px;
+      height: 439px;
+    }
+
+    .description1 {
+      width: 260px;
+      margin-left: 30px;
+      margin-top: 0;
+    }
+  }
+}
+
+@mixin aboutme_res4 {
+  @include aboutme_res3();
+
+  .just_me {
+    width: 760px;
+
+    .me {
+      width: 350px;
+      height: 480px;
+      margin-right: 10px;
+      height: 439px;
+    }
+
+    .description1 {
+      font-size: 1.3rem;
+    }
+  }
+
+  .just_me2 {
+    .my_diploma {
+      width: 600px;
+      height: auto;
+    }
+  }
+}
+
+@mixin aboutme_res5 {
+  @include aboutme_res4();
+
+  .just_me {
+    width: 900px;
+
+    .me {
+      width: 350px;
+      height: 480px;
+      margin-right: 10px;
+      height: 439px;
+    }
+
+    .description1 {
+      font-size: 1.3rem;
+      width: 600px;
+    }
+  }
+
+  .just_me2 {
+    .my_diploma {
+      width: 600px;
+      height: auto;
+    }
+  }
+}
+
+@mixin aboutme_res6 {
+  @include aboutme_res5();
+
+  .just_me {
+    width: 1020px;
+
+    .me {
+      width: 350px;
+      height: 480px;
+      margin-right: 10px;
+      height: 439px;
+    }
+
+    .description1 {
+      font-size: 1.5rem;
+      width: 600px;
+      margin-left: 10%;
+      line-height: 40px;
+    }
+  }
+
+  .just_me2 {
+    .my_diploma {
+      width: 800px;
+      height: auto;
+    }
+  }
+}

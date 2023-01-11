@@ -38,7 +38,7 @@ const Contacts = () => {
           <input type="email" name="user_email" />
           <label>Message</label>
           <textarea name="message" />
-          <input  className="glow-on-hover" type="submit" value="Send" />
+          <input  className="glow-on-hover" type="submit" value="SHOOTH!" />
         </form>
       </div>
     </div>

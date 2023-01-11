@@ -29,44 +29,11 @@
 
 .just_me2 {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   margin-top: 8%;
   margin-bottom: 70px;
-}
-
-.justme2_sub1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 400px;
-}
-
-.justme2_sub2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-left: 10%;
-}
-
-.what_i_use,
-.certificates {
-  font-family: "Barlow";
-  color: $brown;
-  font-size: 3rem;
-  margin-bottom: 5%;
-}
-
-.item1,
-.item2 {
-  font-family: "Barlow";
-  margin-top: 25px;
-  font-size: 1.5rem;
-  font-weight: bold;
-  border-bottom: 1px solid black;
 }
 
 .my_diploma {
@@ -75,11 +42,17 @@
 
 .hello {
   font-size: 3rem;
-  font-family: "Barlow";
+  font-family: "Mukta";
   text-align: center;
-  color: rgb(0, 0, 0);
-  font-family: "Sacramento", cursive;
+  color: hotpink;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+
   text-align: center;
+}
+
+.hello:hover {
+  color: greenyellow;
 }
 
 .mess_link {
@@ -87,4 +60,33 @@
   font-family: "Playfair Display";
   color: hotpink;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 376px) {
+  @include aboutme_res();
+}
+
+@media only screen and (min-width: 377px) and (max-width: 600px) {
+  @include aboutme_res2();
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  @include aboutme_res3();
+}
+
+@media only screen and (min-width: 767px) and (max-width: 900px) {
+  @include aboutme_res4();
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1025px) {
+  @include aboutme_res5();
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1225px) {
+  @include aboutme_res6();
+}
+
+
+@media only screen and (min-width: 1225px) and (max-width: 1439px) {
+  @include aboutme_res6();
 }
