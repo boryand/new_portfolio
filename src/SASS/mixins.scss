@@ -323,7 +323,6 @@
   .cont1_sub {
     .my_description {
       width: 500px;
-      
     }
   }
 }
@@ -332,7 +331,6 @@
   @include landing_4();
 
   .cont1 {
-    height: max-content;
     flex-direction: row;
 
     .landing {
@@ -345,11 +343,47 @@
     .my_description {
       width: 320px;
       margin-bottom: 5%;
-      
     }
     .lets_build {
       margin-top: 5%;
       margin-bottom: 0;
+    }
+  }
+}
+
+@mixin landing_6 {
+  @include landing_5();
+
+  .cont1 {
+    .landing {
+      width: 360px;
+    }
+  }
+  .cont1_sub {
+    .lets_build {
+      font-size: 5.5rem;
+    }
+  }
+}
+
+@mixin landing_7 {
+  @include landing_6();
+
+  .cont1 {
+
+    height: 600px;
+    .landing {
+      width: 400px;
+    }
+  }
+  .cont1_sub {
+    .lets_build {
+      font-size: 6.5rem;
+    }
+
+    .my_description {
+      width: 600px;
+      font-size: 1.8rem;
     }
   }
 }
