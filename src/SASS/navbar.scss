@@ -3,10 +3,10 @@
   justify-content: space-between;
   background-color: $medium;
 
-
-   .mine_logo {
-    height:130px;
-    margin-left: 50px;  }
+  .mine_logo {
+    height: 130px;
+    margin-left: 50px;
+  }
 }
 
 .nav {
@@ -18,8 +18,6 @@
   height: 80px;
 }
 
-
-
 .nav_item {
   list-style-type: none;
   background-color: transparent;
@@ -28,13 +26,45 @@
 .link1,
 .link2 {
   text-decoration: none;
-  background-color: transparent;
-  color: #3c2a21;
+  color: #d7e9b9;;
   font-family: "Poppins", sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-right: 20px;
+  background-color: #2f3e46;
+  padding:5px
 }
 
+.link2 {
+  color: #d7e9b9;
+  font-size: 1.2rem;
+  background-color: #2f3e46;
+  padding:5px
+}
+
+.nav_container {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+}
+
+.linked1 {
+  height: 40px;
+  margin-left: 50px;
+}
+
+#linked,
+#mail {
+  padding: 11px 19px;
+ color: black;
+
+}
+
+
+.nav_container2 {
+  display: flex;
+  flex-direction: column;
+}
 
 
 //MEDIA QUERIES

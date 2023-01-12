@@ -53,6 +53,7 @@ const Projects = () => {
           <p className="tech">Javascript</p>
           <p className="tech1">React</p>
         </div>
+
  
       
     </div>
