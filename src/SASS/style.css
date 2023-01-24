@@ -9,75 +9,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 .container {
   display: flex;
-  justify-content: space-between;
-  background-color: #fdf6f0;
-}
-.container .mine_logo {
-  height: 130px;
-  margin-left: 50px;
+  justify-content: center;
+  background-color: #f7f7f7;
 }
 
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: hotpink;
-  text-align: center;
-  padding: 14px 16px;
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f7f7;
+  height: 80px;
+}
+
+.nav_item {
+  list-style-type: none;
+  background-color: transparent;
+}
+
+.link1 {
   text-decoration: none;
-}
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-  margin-right: 50px;
-}
-
-.dropdown .dropbtn {
-  border: 2mm ridge #d7e9b9;
-  outline: none;
-  color: #d7e9b9;
-  font-family: "Barlow";
-  padding: 14px 16px;
+  color: #8ECAE6;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  margin-right: 20px;
   background-color: #2f3e46;
-  letter-spacing: 3px;
-  margin-top: 10px;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #fdf6f0;
-  width: 110px;
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-  font-family: "Teko", sans-serif;
-  font-size: 1.3rem;
-}
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
+  padding: 10px;
+  border-radius: 10px 100px/120px;
 }
 
 .cont1 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #fdf6f0;
+  background-color: #f7f7f7;
   height: 600px;
 }
 .cont1 .cont1_sub {
@@ -90,25 +54,27 @@
   font-family: "Teko", sans-serif;
   align-self: center;
   font-size: 7rem;
-  color: #d7e9b9;
+  color: #8ecae6;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 .cont1 .my_description {
   align-self: center;
   font-family: "Teko", sans-serif;
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-top: 3%;
   width: 600px;
   color: #2f3e46;
 }
 .cont1 .bubbly {
   font-family: "Eater", cursive;
-  color: #d7e9b9;
+  color: #8ecae6;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   text-decoration: none;
 }
 
 .landing {
+  width: 600px;
+  filter: drop-shadow(16px 16px 20px #8ecae6);
   height: 500px;
 }
 
@@ -510,7 +476,7 @@
   }
 }
 .projects_container {
-  background-color: #fdf6f0;
+  background-color: #f7f7f7;
   height: 690px;
   display: flex;
   justify-content: space-evenly;
@@ -554,7 +520,7 @@
 .name {
   font-family: "Mukta";
   font-size: 2rem;
-  color: #d7e9b9;
+  color: #8ECAE6;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
@@ -644,7 +610,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #fdf6f0;
+  background-color: #f7f7f7;
   height: 650px;
 }
 
@@ -683,7 +649,7 @@ input[type=submit] {
   border: none;
   width: 150px;
   font-size: 1rem;
-  color: #fdf6f0;
+  color: #f7f7f7;
 }
 
 input[type=submit]:hover {
@@ -706,7 +672,8 @@ textarea {
 }
 
 .img1 {
-  height: 500px;
+  height: 300px;
+  width: 500px;
 }
 
 @media only screen and (max-width: 426px) {
@@ -812,7 +779,7 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fdf6f0;
+  background-color: #f7f7f7;
 }
 
 .me {
@@ -853,7 +820,7 @@ textarea {
   font-size: 3rem;
   font-family: "Mukta";
   text-align: center;
-  color: #d7e9b9;
+  color: #8ecae6;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   text-align: center;
 }
@@ -861,7 +828,7 @@ textarea {
 .mess_link {
   text-decoration: none;
   font-family: "Playfair Display";
-  color: hotpink;
+  color: #3ea4d4;
   cursor: pointer;
 }
 
@@ -1329,9 +1296,9 @@ textarea {
   }
 }
 .footer_container {
-  background-color: #fdf6f0;
+  background-color: #f7f7f7;
   height: 120px;
-  border-top: 4mm ridge #d7e9b9;
+  border-top: 4mm ridge #8ECAE6;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
