@@ -27,7 +27,7 @@ const Contacts = () => {
   return (
     <div className="contacts_container ">
       
-      <img className="img1" src={"https://doodleipsum.com/700x700/outline?i=9e4b919155f89f2ce88d0aa8a9e6a343"}></img>
+      <img className="img1" src={email}></img>
   
       <div className="sub_contacts">
     
