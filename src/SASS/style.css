@@ -17,92 +17,62 @@
   margin-left: 50px;
 }
 
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  background-color: #fdf6f0;
-  height: 80px;
-}
-
-.nav_item {
-  list-style-type: none;
-  background-color: transparent;
-}
-
-.link1,
-.link2 {
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: hotpink;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  margin-right: 50px;
+}
+
+.dropdown .dropbtn {
+  border: 2mm ridge #d7e9b9;
+  outline: none;
   color: #d7e9b9;
-  font-family: "Poppins", sans-serif;
-  font-size: 1.2rem;
-  margin-right: 20px;
+  font-family: "Barlow";
+  padding: 14px 16px;
   background-color: #2f3e46;
-  padding: 5px;
+  letter-spacing: 3px;
+  margin-top: 10px;
 }
 
-.link2 {
-  color: #d7e9b9;
-  font-size: 1.2rem;
-  background-color: #2f3e46;
-  padding: 5px;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fdf6f0;
+  width: 110px;
+  z-index: 1;
 }
 
-.nav_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.linked1 {
-  height: 40px;
-  margin-left: 50px;
-}
-
-#linked,
-#mail {
-  padding: 11px 19px;
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
   color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-family: "Teko", sans-serif;
+  font-size: 1.3rem;
 }
 
-.nav_container2 {
-  display: flex;
-  flex-direction: column;
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
 }
 
-@media only screen and (max-width: 450px) {
-  .nav {
-    justify-content: center;
-    align-items: center;
-  }
-  .link1,
-.link2 {
-    font-size: 15px;
-    margin-right: 10px;
-  }
-  .mine_logo {
-    display: none;
-  }
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
-@media only screen and (min-width: 451px) and (max-width: 767px) {
-  .nav {
-    justify-content: center;
-  }
-  .link1,
-.link2 {
-    font-size: 17px;
-  }
-}
-@media only screen and (min-width: 767px) and (max-width: 1025px) {
-  .link1,
-.link2 {
-    font-size: 15px;
-    margin-right: 20px;
-  }
-  .sub_contacts {
-    margin-left: 50px;
-  }
-}
+
 .cont1 {
   display: flex;
   justify-content: space-evenly;
@@ -126,7 +96,7 @@
 .cont1 .my_description {
   align-self: center;
   font-family: "Teko", sans-serif;
-  font-size: 1.6rem;
+  font-size: 2rem;
   margin-top: 3%;
   width: 600px;
   color: #2f3e46;
@@ -195,7 +165,7 @@
     width: 270px;
   }
   .cont1_sub .lets_build {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 @media only screen and (min-width: 376px) and (max-width: 500px) {
@@ -228,7 +198,7 @@
     width: 270px;
   }
   .cont1_sub .lets_build {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .cont1 {
     height: 820px;
@@ -240,9 +210,6 @@
   .cont1_sub .my_description {
     width: 300px;
     font-size: 1.5rem;
-  }
-  .cont1_sub .lets_build {
-    font-size: 4.3rem;
   }
 }
 @media only screen and (min-width: 500px) and (max-width: 668px) {
@@ -275,7 +242,7 @@
     width: 270px;
   }
   .cont1_sub .lets_build {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .cont1 {
     height: 820px;
@@ -287,9 +254,6 @@
   .cont1_sub .my_description {
     width: 300px;
     font-size: 1.5rem;
-  }
-  .cont1_sub .lets_build {
-    font-size: 4.3rem;
   }
   .cont1 {
     height: -webkit-max-content;
@@ -334,7 +298,7 @@
     width: 270px;
   }
   .cont1_sub .lets_build {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .cont1 {
     height: 820px;
@@ -346,9 +310,6 @@
   .cont1_sub .my_description {
     width: 300px;
     font-size: 1.5rem;
-  }
-  .cont1_sub .lets_build {
-    font-size: 4.3rem;
   }
   .cont1 {
     height: -webkit-max-content;
@@ -409,7 +370,7 @@
     width: 270px;
   }
   .cont1_sub .lets_build {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .cont1 {
     height: 820px;
@@ -421,9 +382,6 @@
   .cont1_sub .my_description {
     width: 300px;
     font-size: 1.5rem;
-  }
-  .cont1_sub .lets_build {
-    font-size: 4.3rem;
   }
   .cont1 {
     height: -webkit-max-content;
@@ -490,7 +448,7 @@
     width: 270px;
   }
   .cont1_sub .lets_build {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .cont1 {
     height: 820px;
@@ -502,9 +460,6 @@
   .cont1_sub .my_description {
     width: 300px;
     font-size: 1.5rem;
-  }
-  .cont1_sub .lets_build {
-    font-size: 4.3rem;
   }
   .cont1 {
     height: -webkit-max-content;
