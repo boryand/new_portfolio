@@ -1,4 +1,4 @@
-//NAVBAR MIXINS START
+//ContactsPage MIXINS START
 
 @mixin res1 {
   @include res();
@@ -29,7 +29,7 @@
   }
 }
 
-//NAVBAR MIXINS END
+//ContactsPagee MIXINS END
 
 //ABOUT ME PAGE
 @mixin aboutme_res {
@@ -283,7 +283,7 @@
     }
 
     .lets_build {
-      font-size: 4rem;
+      font-size: 3rem;
     }
   }
 }
@@ -304,9 +304,8 @@
       font-size: 1.5rem;
     }
 
-    .lets_build {
-      font-size: 4.3rem;
-    }
+    
+    
   }
 }
 @mixin landing_4 {
@@ -386,4 +385,20 @@
       font-size: 1.8rem;
     }
   }
+}
+
+
+
+//Navbar MIXINS
+
+@mixin nav1 {
+
+  .container {
+    justify-content: center;
+
+    .mine_logo {
+      margin: 0;
+    }
+  }
+
 }
