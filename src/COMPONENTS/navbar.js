@@ -9,8 +9,8 @@ const Navbar = () => {
         <img className="mine_logo" src={bobby} />
 
         {/* <div className="nav_container2">
-         <a href="https://www.linkedin.com/in/boryana-dimitrova94/" target="_blank"> <i class="fa fa-linkedin   fa-lg"   aria-hidden="true" id="linked"></i></a>
-         <a href="mailto:boryana.dimitrova789@gmail.com" target="_blank"> <i class="fa fa-envelope   fa-lg" aria-hidden="true" id="mail"></i></a>
+         <a > <i class="fa fa-linkedin   fa-lg"   aria-hidden="true" id="linked"></i></a>
+         <a > <i class="fa fa-envelope   fa-lg" aria-hidden="true" id="mail"></i></a>
          </div> */}
       </div>
 
@@ -27,18 +27,18 @@ const Navbar = () => {
           <i className="fa fa-caret-down"></i>
         </button>
         <div className="dropdown-content">
-          <a href="/home">Home</a>
+          <a href="/">Home</a>
           <a href="/projects">Projects</a>
           <a href="/about_me">Ab♡ut</a>
           <a href="/contacts">Contacts</a>
-          <a href="#">
+          <a href="https://www.linkedin.com/in/boryana-dimitrova94/" target="_blank">
             <i
               class="fa fa-linkedin   fa-lg"
               aria-hidden="true"
               id="linked"
             ></i>
           </a>
-          <a href="#">
+          <a href="mailto:boryana.dimitrova789@gmail.com" target="_blank">
             <i class="fa fa-envelope fa-lg" aria-hidden="true" id="mail"></i>
           </a>
         </div>
