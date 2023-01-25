@@ -1,9 +1,48 @@
 //ContactsPage MIXINS START
 
+@mixin res {
+  .contacts_container {
+    flex-direction: column;
+    height: max-content;
+  }
+
+  .img1 {
+    width: 320px;
+    margin-top: 20px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  .sub_contacts {
+    height: max-content;
+    margin-bottom: 20px;
+    width: 320px;
+  }
+  form {
+    width: 320px;
+    margin-left: 30px;
+  }
+
+  input {
+    width: 280px;
+    margin-left: 30px;
+  }
+
+  textarea {
+    width: 280px;
+    margin-left: 30px;
+  }
+  label {
+    margin-bottom: 2%;
+  }
+}
+
+
+
 @mixin res1 {
   @include res();
   .img1 {
     width: auto;
+ 
   }
   input,
   textarea {
@@ -248,8 +287,9 @@
     height: 750px;
     .landing {
       width: 300px;
-      height: 230px;
+      height: 270px;
       margin-top: 5%;
+      margin-bottom: 5%;
     }
   }
   .cont1_sub {
@@ -303,9 +343,6 @@
       width: 300px;
       font-size: 1.5rem;
     }
-
-    
-    
   }
 }
 @mixin landing_4 {
@@ -331,9 +368,10 @@
 
   .cont1 {
     flex-direction: row;
+    height: 580px;
 
     .landing {
-      width: 320px;
+      width: 340px;
       height: 390px;
       margin-top: 5%;
     }
@@ -369,7 +407,6 @@
   @include landing_6();
 
   .cont1 {
-
     height: 600px;
     .landing {
       width: 400px;
@@ -387,18 +424,23 @@
   }
 }
 
-
-
 //Navbar MIXINS
 
 @mixin nav1 {
-
-  .container {
-    justify-content: center;
-
-    .mine_logo {
+  .nav {
+    justify-content: space-evenly;
+    width: 320px;
+    .link1 {
       margin: 0;
+      font-size: 0.8rem;
     }
   }
+}
 
+//FOOTER mixins
+
+@mixin footer1 {
+  .build_with_love {
+    font-size: 1.1rem;
+  }
 }
