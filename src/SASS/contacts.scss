@@ -69,42 +69,9 @@ textarea {
 .img1 {
   height: 300px;
   width: 500px;
+  filter: drop-shadow(16px 16px 20px #8ecae6);
 }
 
-@mixin res {
-  .contacts_container {
-    flex-direction: column;
-    height: max-content;
-  }
-
-  .img1 {
-    width: 320px;
-    margin-top: 20px;
-    height: 300px;
-  }
-  .sub_contacts {
-    height: max-content;
-    margin-bottom: 20px;
-    width: 320px;
-  }
-  form {
-    width: 320px;
-    margin-left: 30px;
-  }
-
-  input {
-    width: 280px;
-    margin-left: 30px;
-  }
-
-  textarea {
-    width: 280px;
-    margin-left: 30px;
-  }
-  label {
-    margin-bottom: 2%;
-  }
-}
 
 @media only screen and (max-width: 426px) {
   @include res();
@@ -121,6 +88,6 @@ textarea {
 @media only screen and (min-width: 869px) and (max-width: 1025px) {
   .img1 {
     width: 350px;
-    height: 340px;
+    height: 300px;
   }
 }

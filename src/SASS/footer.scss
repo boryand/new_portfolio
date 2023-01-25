@@ -10,26 +10,12 @@
 
 .build_with_love {
   margin-right: 20px;
-  font-family: "Poppins", sans-serif;
-  font-size: 1.2rem;
+
+  font-family: "Teko", sans-serif;
+  font-size: 1.5rem;
 }
 
-.mail_to_me {
-  height: 30px;
-  margin-right: 20px;
-}
 
-.linked {
-  height: 30px;
-  margin-right: 10px;
-}
-
-.mail_to_me :hover,
-.linked :hover {
-  box-shadow: 1px 20px red;
-}
-
-.footer_container2 {
-  display: flex;
-  justify-content: center;
+@media only screen and (max-width: 480px) {
+  @include footer1();
 }

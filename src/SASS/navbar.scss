@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   background-color: $medium;
-
 }
 
 .nav {
@@ -17,12 +16,11 @@
 .nav_item {
   list-style-type: none;
   background-color: transparent;
-  
 }
 
 .link1 {
   text-decoration: none;
-  color: #8ECAE6;
+  color: #8ecae6;
   font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
   margin-right: 20px;
@@ -31,18 +29,8 @@
   border-radius: 10px 100px / 120px;
 }
 
-
-
-
-
 //MEDIA QUERIES
 
-@media only screen and (max-width: 450px) {
-  // @include nav1()
-}
-
-@media only screen and (min-width: 451px) and (max-width: 767px) {
-}
-
-@media only screen and (min-width: 767px) and (max-width: 1025px) {
+@media only screen and (max-width: 480px) {
+  @include nav1();
 }
