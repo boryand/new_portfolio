@@ -1,13 +1,45 @@
-.landing_container {
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+.big_parent {
+  background-color: whitesmoke;
+}
+
+#certifications,
+#projects,
+#personal {
+  align-self: flex-start;
+  margin-left: 5%;
+  font-family: "Teko", sans-serif;
+  font-size: 2.5rem;
+  background-color: #deaaff;
+  padding: 10px;
+  border-radius: 10px 100px/120px;
+  color: #373737;
+}
+
+.navbar_container {
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.nav_link {
+  text-decoration: none;
+  font-family: "Teko", sans-serif;
+  font-size: 2rem;
+  margin-right: 25px;
+  color: #deaaff;
+  margin-top: 25px;
 }
 
 .cont1 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 500px;
+  background-color: whitesmoke;
+  height: 700px;
+}
+.cont1 .cont1_sub {
+  display: flex;
+  flex-direction: column;
 }
 .cont1 .lets_build {
   margin-top: 5%;
@@ -15,32 +47,200 @@
   font-family: "Teko", sans-serif;
   align-self: center;
   font-size: 7rem;
-  color: #d7e9b9;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  color: #deaaff;
 }
 .cont1 .my_description {
   align-self: center;
-  font-family: "Teko", sans-serif;
-  font-size: 2rem;
+  font-family: "Ysabeau", sans-serif;
+  font-size: 1.4rem;
   margin-top: 3%;
   width: 600px;
-  color: #2f3e46;
-}
-.cont1 .cont1_sub {
-  display: flex;
-  flex-direction: column;
-}
-.cont1 .cont2 {
-  display: flex;
-  flex-direction: column;
+  color: #272727;
 }
 .cont1 .bubbly {
-  font-family: "Eater", cursive;
-  color: #d7e9b9;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-family: "Teko", sans-serif;
+  color: #deaaff;
   text-decoration: none;
+}
+.cont1 .bubbly:hover {
+  text-decoration: underline;
 }
 
 .landing {
-  height: 400px;
+  width: 500px;
+  filter: drop-shadow(0 0 0.75rem #deaaff);
+  height: 500px;
+}
+
+.aboutme_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+.description {
+  font-family: "Ysabeau", sans-serif;
+  font-size: 1.2rem;
+  width: 80%;
+}
+
+.technologies {
+  display: flex;
+  justify-content: space-between;
+}
+
+.technologies_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  font-family: "Ysabeau", sans-serif;
+  font-size: 1.2rem;
+}
+
+.projects_container {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.box1,
+.box2,
+.box3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.box1 .img,
+.box2 .img,
+.box3 .img {
+  height: 300px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.box1 .description,
+.box2 .description,
+.box3 .description {
+  align-self: center;
+  font-family: "Ysabeau", sans-serif;
+  font-size: 1.2rem;
+  width: 500px;
+  color: #272727;
+  margin-top: 5%;
+  text-align: center;
+}
+.box1 .sub_box,
+.box2 .sub_box,
+.box3 .sub_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: flex-start;
+}
+
+.box3 {
+  margin-bottom: 50px;
+}
+
+.name1 {
+  font-family: "Ysabeau", sans-serif;
+  font-size: 1.5rem;
+}
+
+.certificate {
+  width: 60%;
+  margin-top: 25px;
+}
+
+.contacts_container {
+  background-color: #deaaff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
+
+#get_intouch {
+  font-family: "Teko", sans-serif;
+  align-self: center;
+  font-size: 5rem;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  color: whitesmoke;
+  margin: 0 auto;
+  margin-top: 3%;
+}
+
+.get_intouch2 {
+  font-size: 1.3rem;
+  font-family: "Ysabeau", sans-serif;
+  width: 70%;
+  align-self: center;
+  text-align: center;
+}
+
+.email_btn {
+  padding: 15px;
+  width: 150px;
+  font-size: 1.2rem;
+  color: #373737;
+  background-color: whitesmoke;
+}
+
+button {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 2em;
+  padding: 0.75em 1em;
+  color: #373737;
+  border: 0.15em solid #373737;
+  border-radius: 1.4em;
+  transition: 4s;
+}
+button:before, button:after {
+  content: "";
+  position: absolute;
+  top: -1.5em;
+  z-index: -1;
+  width: 200%;
+  aspect-ratio: 1;
+  border: none;
+  border-radius: 40%;
+  background-color: rgba(55, 55, 55, 0.25);
+  transition: 4s;
+}
+button:before {
+  left: -80%;
+  transform: translate3d(0, 5em, 0) rotate(-340deg);
+}
+button:after {
+  right: -80%;
+  transform: translate3d(0, 5em, 0) rotate(390deg);
+}
+button:hover, button:focus {
+  color: #deaaff;
+}
+button:hover:before, button:hover:after, button:focus:before, button:focus:after {
+  transform: none;
+  background-color: rgba(55, 55, 55, 0.75);
+}
+
+button :hover {
+  cursor: pointer;
+}
+
+.email_link {
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+@media only screen and (max-width: 321px) {
+  @in;
 }
