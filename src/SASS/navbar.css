@@ -1,9 +1,24 @@
 .nav {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: space-around;
+  background-color: brown;
+  height: 80px;
 }
 
 .nav_item {
   list-style-type: none;
+  background-color: transparent;
+}
+
+.link1 {
+  text-decoration: none;
+  color: #deaaff;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  margin-right: 20px;
+  font-weight: bold;
+  background-color: #373737;
+  padding: 10px;
+  border-radius: 10px 100px/120px;
 }

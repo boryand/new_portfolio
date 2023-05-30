@@ -1,446 +1,246 @@
-//ContactsPage MIXINS START
-
-@mixin res {
-  .contacts_container {
+@mixin xs_screen {
+  //Navbar
+  .navbar_container {
     flex-direction: column;
-    height: max-content;
+  }
+  .nav_link {
+    margin-top: 5px;
+    font-size: 1.7rem;
+    margin-left: 5px;
   }
 
-  .img1 {
-    width: 320px;
-    margin-top: 20px;
-    height: 200px;
-    margin-bottom: 20px;
-  }
-  .sub_contacts {
-    height: max-content;
-    margin-bottom: 20px;
-    width: 320px;
-  }
-  form {
-    width: 320px;
-    margin-left: 30px;
-  }
-
-  input {
-    width: 280px;
-    margin-left: 30px;
-  }
-
-  textarea {
-    width: 280px;
-    margin-left: 30px;
-  }
-  label {
-    margin-bottom: 2%;
-  }
-}
-
-
-
-@mixin res1 {
-  @include res();
-  .img1 {
-    width: auto;
- 
-  }
-  input,
-  textarea {
-    width: 420px;
-  }
-}
-
-@mixin res2 {
-  .img1 {
-    width: 350px;
-    height: 340px;
-  }
-  .sub_contacts {
-    margin: 0;
-  }
-  form {
-    margin: 0;
-  }
-
-  input,
-  textarea {
-    width: 400px;
-  }
-}
-
-//ContactsPagee MIXINS END
-
-//ABOUT ME PAGE
-@mixin aboutme_res {
-  .just_me {
+  //First section about me
+  .cont1 {
     flex-direction: column;
-    width: 320px;
-
-    .me {
+    height: auto;
+    .lets_build {
+      font-size: 3.3rem;
+      margin-top: 5%;
+    }
+    .my_description {
       width: 300px;
-      margin: 0;
-      height: auto;
-    }
-
-    .description1 {
-      width: 320px;
-      margin-top: 50px;
-      width: 250px;
+      font-size: 1.3rem;
       text-align: center;
-      font-size: 1.2rem;
+    }
+    .landing {
+      width: 320px;
+      height: 290px;
     }
   }
 
-  .just_me2 {
+  //about me section
+  .technologies {
+    flex-direction: column;
+  }
+
+  //projects section
+
+  .box1,
+  .box2,
+  .box3 {
+    flex-direction: column;
+    margin-top: 15px;
+    align-items: center;
+    .img {
+      width: 320px;
+      height: 200px;
+    }
+    .description {
+      width: 320px;
+    }
+  }
+
+  .box2 {
     flex-direction: column-reverse;
-
-    .my_diploma {
-      width: 300px;
-      height: auto;
-    }
-  }
-}
-
-@mixin aboutme_res2 {
-  @include aboutme_res();
-  .just_me {
-    width: 400px;
-    .description1 {
-      width: 380px;
-    }
-  }
-
-  .just_me2 {
-    .my_diploma {
-      width: 400px;
-      height: auto;
-    }
-  }
-}
-
-@mixin aboutme_res3 {
-  @include aboutme_res2();
-  .just_me {
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 580px;
-
-    .me {
-      width: 280px;
-      margin-right: 10px;
-      height: 439px;
-    }
-
-    .description1 {
-      width: 260px;
-      margin-left: 30px;
-      margin-top: 0;
-    }
-  }
-}
-
-@mixin aboutme_res4 {
-  @include aboutme_res3();
-
-  .just_me {
-    width: 760px;
-
-    .me {
-      width: 350px;
-      height: 480px;
-      margin-right: 10px;
-      height: 439px;
-    }
-
-    .description1 {
-      font-size: 1.3rem;
-    }
-  }
-
-  .just_me2 {
-    .my_diploma {
-      width: 600px;
-      height: auto;
-    }
-  }
-}
-
-@mixin aboutme_res5 {
-  @include aboutme_res4();
-
-  .just_me {
-    width: 900px;
-
-    .me {
-      width: 350px;
-      height: 480px;
-      margin-right: 10px;
-      height: 439px;
-    }
-
-    .description1 {
-      font-size: 1.3rem;
-      width: 600px;
-    }
-  }
-
-  .just_me2 {
-    .my_diploma {
-      width: 600px;
-      height: auto;
-    }
-  }
-}
-
-@mixin aboutme_res6 {
-  @include aboutme_res5();
-
-  .just_me {
-    width: 1020px;
-
-    .me {
-      width: 350px;
-      height: 480px;
-      margin-right: 10px;
-      height: 439px;
-    }
-
-    .description1 {
-      font-size: 1.5rem;
-      width: 600px;
-      margin-left: 10%;
-      line-height: 40px;
-    }
-  }
-
-  .just_me2 {
-    .my_diploma {
-      width: 800px;
-      height: auto;
-    }
-  }
-}
-
-//PROJECTS PAGE MIXINS
-
-@mixin projects1 {
-  .projects_container {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-
-    height: max-content;
   }
-  .box1,
-  .box2,
-  .box3 {
+
+  // certifications
+  .certificate {
     width: 320px;
-    margin-top: 40px;
   }
 
-  .box3 {
-    margin-bottom: 30px;
+  //Contacts
+  .contacts_container {
+    margin-top: 10%;
+  }
+
+  #get_intouch {
+    font-size: 4rem;
   }
 }
 
-@mixin projects2 {
-  @include projects1();
+@mixin s_screen {
+  @include xs_screen();
+
+  //first section about me
+
+  .cont1 {
+    .landing {
+      width: 370px;
+      height: 340px;
+    }
+  }
+
+  //projects
   .box1,
   .box2,
   .box3 {
+    .img {
+      width: 370px;
+    }
+  }
+
+  //certifications
+  .certificate {
+    width: 370px;
+  }
+}
+
+@mixin m_screen {
+  @include s_screen();
+
+  //first about me section
+
+  .cont1 {
+    .lets_build {
+      font-size: 4rem;
+    }
+
+    .my_description {
+      width: 400px;
+    }
+
+    .landing {
+      width: 420px;
+      height: 370px;
+    }
+  }
+
+  //projects
+  .box1,
+  .box2,
+  .box3 {
+    .img {
+      width: 400px;
+    }
+  }
+
+  //certifications
+  .certificate {
     width: 400px;
   }
 }
 
-@mixin projects3 {
-  .projects_container {
+@mixin tablet {
+  @include m_screen();
+  .navbar_container {
     flex-direction: row;
   }
 
-  .box1,
-  .box2,
-  .box3 {
-    width: 300px;
-    margin-right: 15px;
-    margin-top: 30px;
-    height: 600px;
-  }
-}
+  //first about me section
 
-@mixin projects4 {
-  .box1,
-  .box2,
-  .box3 {
-    width: 360px;
-    margin-right: 15px;
-    margin-top: 30px;
-    height: 600px;
-  }
-}
-
-//Laning PAGE MIXIN
-
-@mixin landing_1 {
   .cont1 {
-    flex-direction: column;
-
-    height: 750px;
-    .landing {
-      width: 300px;
-      height: 270px;
-      margin-top: 5%;
-      margin-bottom: 5%;
-    }
-  }
-  .cont1_sub {
-    align-items: center;
-
-    .my_description {
-      font-size: 1.4rem;
-      width: 200px;
-      text-align: center;
-    }
-
     .lets_build {
-      font-size: 3rem;
-      margin-top: 5%;
+      margin-top: 10%;
     }
-  }
-}
-
-@mixin landing_2 {
-  @include landing_1();
-
-  .cont1 {
-    .landing {
-      width: 320px;
-      height: 250px;
-    }
-  }
-  .cont1_sub {
     .my_description {
-      width: 270px;
-    }
-
-    .lets_build {
-      font-size: 3rem;
-    }
-  }
-}
-
-@mixin landing_3 {
-  @include landing_2();
-
-  .cont1 {
-    height: 820px;
-    .landing {
-      width: 350px;
-      height: 330px;
-    }
-  }
-  .cont1_sub {
-    .my_description {
-      width: 300px;
+      width: 600px;
       font-size: 1.5rem;
     }
-  }
-}
-@mixin landing_4 {
-  @include landing_3();
-
-  .cont1 {
-    height: max-content;
 
     .landing {
-      width: 350px;
-      height: 300px;
-    }
-  }
-  .cont1_sub {
-    .my_description {
       width: 500px;
+      height: 500px;
+    }
+  }
+
+  // about me section
+
+  .description {
+    font-size: 1.5rem;
+  }
+
+  // projects section
+  .box1,
+  .box2,
+  .box3 {
+    .description {
+      font-size: 1.5rem;
     }
   }
 }
 
-@mixin landing_5 {
-  @include landing_4();
-
-  .cont1 {
-    flex-direction: row;
-    height: 580px;
-
-    .landing {
-      width: 340px;
-      height: 390px;
-      margin-top: 5%;
+@mixin tablet1 {
+  @include tablet();
+  //navbar
+  .navbar_container {
+    .nav_link {
+      font-size: 2.5rem;
     }
   }
-  .cont1_sub {
+
+  //first section about me
+  .cont1 {
+    .lets_build {
+      font-size: 7rem;
+    }
     .my_description {
-      width: 320px;
-      margin-bottom: 5%;
-    }
-    .lets_build {
-      margin-top: 5%;
-      margin-bottom: 0;
+      font-size: 2rem;
+      width: 80%;
     }
   }
-}
+  //second ebout me section
+  .aboutme_container {
+    .description {
+      font-size: 1.7rem;
+    }
 
-@mixin landing_6 {
-  @include landing_5();
-
-  .cont1 {
-    .landing {
-      width: 360px;
+    .technologies {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .technologies_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        font-family: "Ysabeau", sans-serif;
+        font-size: 1.5rem;
+      }
     }
   }
-  .cont1_sub {
-    .lets_build {
-      font-size: 5.5rem;
+
+  //projects
+
+  .box1,
+  .box2,
+  .box3 {
+    .img {
+      width: auto;
+      height: 400px;
+    }
+
+    .name1 {
+      font-size: 2rem;
+    }
+
+    .description {
+      width: 800px;
+      font-size: 2rem;
     }
   }
-}
 
-@mixin landing_7 {
-  @include landing_6();
-
-  .cont1 {
-    height: 600px;
-    .landing {
-      width: 400px;
-    }
+  //certifications
+  .certificate {
+    width: 800px;
   }
-  .cont1_sub {
-    .lets_build {
-      font-size: 6.5rem;
-    }
 
-    .my_description {
-      width: 600px;
-      font-size: 1.8rem;
-    }
+  //contacts
+  #get_intouch {
+    font-size: 6rem;
   }
-}
-
-//Navbar MIXINS
-
-@mixin nav1 {
-  .nav {
-    justify-content: space-evenly;
-    width: 320px;
-    .link1 {
-      margin: 0;
-      font-size: 0.8rem;
-    }
-  }
-}
-
-//FOOTER mixins
-
-@mixin footer1 {
-  .build_with_love {
-    font-size: 1.1rem;
+  .get_intouch2 {
+    font-size: 1.7rem;
   }
 }
