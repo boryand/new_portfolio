@@ -3,12 +3,11 @@ import certificate from "../IMAGES/certificate.jpg";
 import React from "react";
 import Zoom from "react-reveal/Zoom";
 
-
 const Landing = () => {
   const url1 = "https://main.d395u6ndg1stgh.amplifyapp.com/";
   const url2 = "https://main.d2jd8gki5jhbu3.amplifyapp.com/";
 
-  const url3 = "https://www.zu-bar-and-dinner.com/";
+  const url3 = "https://main.d2uya9otszawh5.amplifyapp.com/";
 
   return (
     <div className="big_parent">
@@ -102,7 +101,6 @@ const Landing = () => {
             <p> ⋆Figma </p>
             <p> ⋆Agile Technologies</p>
           </div>
-  
         </div>
         <div className="projects_container">
           <p id="projects"> ⚒️ Projects</p>
@@ -186,7 +184,6 @@ const Landing = () => {
           <button className="email_btn"> Say Hi 👽</button>
         </a>
       </div>
-     
     </div>
   );
 };
